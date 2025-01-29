@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- <img src="images/registeration.jpeg" alt="registeration" width="1500" height="1500"> -->
+    <center>
+        <h3>Create your account!!!</h3>
+    </center>
+        <div class="wrapper">
+          <div class="inner">
+              <form action="results.html" method="get" autocomplete="off">
+                  <!-- FirstName -->
+                   <fieldset>
+                    <legend>
+                      <b>PERSONAL INFORMATION</b>
+                    </legend>
+                    <!-- <div class="form"> -->
+                      <div class="firstname">
+                        <label for="firstname">FirstName: </label>
+                        <input type="text" name="firstname" id="firstname" placeholder="Please enter your firstname" value="" minlength="2" maxlength="10" required>
+                     </div>
+                     <br>
+                    
+                     <!-- lastname -->
+                      <div class="lastname">
+                        <label for="lastname">LastName: </label>
+                        <input type="text" name="lastname" id="lastname" placeholder="Please enter your lastname" value="" minlength="2" maxlength="10" required>
+                      </div>
+                      <br>
+                      <!-- Password -->
+                      <div>
+                        <label for="password">Password: </label>
+                        <input type="password" name="password" id="password" minlength="8" maxlength="16" placeholder="Please enter your password">
+                      </div>
+                      <br>
+            
+                      <!-- confirm password -->
+                      <div>
+                        <label for="cpassword">Confirm Password: </label>
+                        <input type="password" name="cpassword" id="cpassword" minlength="8" maxlength="16" placeholder="Please confirm password">
+                      </div>
+                     <br>
+                    <!-- Guests bringing -->
+                     <div class="guests">
+                        <label for="guests">How many guest are you bringing?: </label>
+                        <input type="number" name="guests" id="guests" width="100px" placeholder="5">
+                     </div>
+                     <br>
+                     <!-- Date -->
+                      <div class="date">
+                        <label for="date">Enter Date: </label>
+                        <input type="date" name="date" id="date">
+                      </div>
+                      <br>
+                      <!-- Time -->
+                      <div class="time">
+                        <label for="time">Enter Time: </label>
+                        <input type="time" name="time" id="time">
+                      </div>
+                      <br>
+                      <!-- URL -->
+                      <div class="URL">
+                        <label for="URL">Enter URL: </label>
+                        <input type="URL" name="URL" id="URL" placeholder="https://www.google.com/">
+                      </div>
+                      <br>
+                      <!-- Yes/No -->
+                       <div class="yes/no">
+                          <input type="radio" name="yes" id="yes">
+                          <label for="yes">Yes</label>
+                          <input type="radio" name="yes" id="yes">
+                          <label for="yes">No</label>
+                       </div>
+                      <br>
+                      <!-- phone number -->
+                       <div>
+                        <label for="phno">Phone Number: </label>
+                       <input type="number" name="phno" id="phno" min="6" max="10" style="width:15%" required>
+                       </div>
+                       <br>
+                      <!-- dropdown -->
+                       <div>
+                        <label for="dropdown">Guest city:</label>
+                        <input list="city" id="dropdown">
+                        <datalist id="city">
+                          <option value="erode">Erode</option>
+                          <option value="salem">Salem</option>
+                          <option value="trichy">Tiruchirappalli</option>
+                        </datalist>
+                       </div>
+                       <br>
+                       <!-- files -->
+                       <div class="files">
+                        <label for="file">Choose File: </label>
+                        <input type="file" name="files" id="file" accept=".jpeg" multiple>
+                     </div>
+                     <br>
+                       <!-- Message -->
+                        <label for="message">Message: </label>
+                        <textarea name="message" id="message" rows="5" cols="60" placeholder="type any message here"></textarea>
+                        <br>
+                       <!-- submit/reset -->
+                     <div class="submit-reset">
+                        <button type="reset">RESET</button>
+                        <button type="submit">SUBMIT</button>
+                     </div>
+                     <br>
+                     <!-- Remember/Forgot Password -->
+                     <div class="remember">
+                        <label for="remember"></label>
+                        <input type="checkbox" name="remember" id="remember">Remember Me!
+                        <a href="forgot password" &#128517;>Forgot Password</a>
+                     </div>
+                     <br>
+                   </fieldset>
+                  
+              </form>
+          </div>
+      </div>
+</body>
+</html>
