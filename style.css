@@ -34,20 +34,32 @@ img {
     transition: .5s ease-in-out;
 }
 .contact_btn:hover{
-  color:#fff;
+  /* color:#fff; */
   border:2px solid #ed2279;
   background:transparent;
 }
 /* navbar section */
-li a{
-  padding:15px;
-  display:block;
-  color:#fff;
+.nav-link{
+  position:relative;
 }
-li a:hover{
-  color:#ed2279;
+.nav-link::after{
+  content:'';
+  opacity:0;
+  transition:all 0.2s;
+  height:2px;
+  width:100%;
+  background-color:#ed2279;
+  position:absolute;
+  bottom:0;
+  left:0;
 }
-
+.nav-link:hover{
+ /* border-bottom:2px solid #ed2279; */
+ /* text-decoration: underline; */
+}
+.nav-link:hover::after{
+  opacity:1;
+}
 /* Home section */
 .home{
   padding:90px 100px;
