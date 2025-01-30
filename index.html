@@ -4,7 +4,8 @@
     <!-- required meta tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio website</title>
+   <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <title>Apsara</title>
     <!-- font awesome css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
@@ -35,19 +36,19 @@
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto">
-                  <li class="nav-item">
+                  <li class="nav-item cap">
                     <a class="nav-link active" aria-current="page" href="#home">Home</a>
                   </li>
-                  <li class="nav-item">
+                  <li class="nav-item cap">
                     <a class="nav-link" href="#about">About</a>
                   </li>
-                  <li class="nav-item">
+                  <li class="nav-item cap">
                     <a class="nav-link" href="#skills">Skills</a>
                   </li>
-                  <li class="nav-item">
+                  <li class="nav-item cap">
                     <a class="nav-link" href="#services">Services</a>
                   </li>
-                  <li class="nav-item">
+                  <li class="nav-item cap">
                     <a class="nav-link" href="#contact">Contact</a>
                   </li>
                   <a href="#contact"><button class="contact_btn">Contact Me</button></a>
@@ -88,8 +89,13 @@
         </div>
      </section>
      <!-- About section-end -->
+
+
       <!-- SKILLS SECTION-START -->
       <section id="skills" class="skills">
+        <h1 class="skills_section">
+          My <span>Skills</span>
+        </h1>
         <div class="wrapper">
           <div class="card">
             <div class="circle">
@@ -118,28 +124,120 @@
         </div>
       </section>
       <!-- SKILLS SECTION-END -->
-       <script>
-        let options={
-          startAngle: -1.55,
-          size:150,
-          value:0.85,
-          fill:{gradient:["#a445b2","#fa2499"]}
-        }
-        $(".circle .bar").circleProgress(options).on('circle-animation-progress',
-          function(event, progress,stepValue){
-            $(this).parent().find("span").text(String(stepValue.toFixed(2).substr(2)) + "%");
 
-          }
-        );
-        $(".js .bar").circleProgress({
-          value:0.70,
-        });
 
-        $(".angular .bar").circleProgress({
-          value:0.60,
-        });
+      <!-- SERVICES SECTION-START -->
+       <section id="services">
+        <h1 class="service_section">
+          My <span>Services</span>
+        </h1>
+        <div class="card1">
+          <div class="service_card">
+            <i class="fas fa-computer"></i>
+            <h2>Web Development</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, eligendi.</p>
+            <a href="#">Read More...</a>
+          </div>
+          <div class="service_card">
+            <i class="fas fa-computer"></i>
+            <h2>UI/UX Design</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, eligendi.</p>
+            <a href="#">Read More...</a>
+          </div>
+          <div class="service_card">
+            <i class="fas fa-computer"></i>
+            <h2>Front end developer</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, eligendi.</p>
+            <a href="#">Read More...</a>
+          </div>
+        </div>
+       </section>
+       <!-- SERVICES SECTION-END -->
 
-       </script>
+       <!-- CONTACT SECTION-start -->
+       <section id="contact" class="contact">
+        <h1 class="contact_section">
+          Contact <span>Me</span>
+        </h1>
+        <div class="container1">
+          <div class="item">
+            <div class="contact">
+              <div class="first-text">Let's get in touch!</div>
+              <img src="./images/logo-image.png" alt="" class="image">
+              <div class="social-links">
+                <span class="secnd-text">Connect with Us!</span>
+                <ul class="social-media">
+                  <li><a href="#"> <i class="fa-brands fa-instagram"></i></a></li>
+                  <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                  <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                  <li><a href="#"><i class="fas fa-phone"></i></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="submit-form">
+              <h4 class="third-text">Contact Us</h4>
+              <form action="">
+                <div class="input-box">
+                  <input type="text" class="input" required>
+                  <label for="">Name</label>
+                </div>
+
+                <div class="input-box">
+                  <input type="email" class="input" required>
+                  <label for="">Email</label>
+                </div>
+
+                <div class="input-box">
+                  <input type="tel" class="input" required>
+                  <label for="">Phone</label>
+                </div>
+
+                <div class="input-box">
+                  <textarea name="" id="" class="input" reuqired></textarea>
+                  <label for="">Message</label>
+                </div>
+                <input type="submit" class="btn" value="Submit">
+
+              </form>
+            </div>
+          </div>
+        </div>
+       </section>
+        <!-- CONTACT SECTION-END -->
+
+
+
+
+<script>
+  let options={
+  startAngle: -1.55,
+  size:150,
+  value:0.85,
+  fill:{gradient:["#a445b2","#fa2499"]}
+}
+$(".circle .bar").circleProgress(options).on('circle-animation-progress',
+  function(event, progress,stepValue){
+    $(this).parent().find("span").text(String(stepValue.toFixed(2).substr(2)) + "%");
+
+  }
+);
+$(".js .bar").circleProgress({
+  value:0.70,
+});
+
+$(".angular .bar").circleProgress({
+  value:0.60,
+});
+
+</script>
+
+
+
+
+
+
+      
+      
 
 </body>
 </html>
