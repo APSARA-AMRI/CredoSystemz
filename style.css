@@ -192,3 +192,165 @@ img {
     font-size:15px;
   }
 }
+
+/* About section */
+.about{
+  display:flex;
+  justify-content: space-around;
+  margin:100px  150px;
+  gap:60px;
+  padding-top:100px;
+  color:#fff;
+}
+.about_photo img{
+  background-color:#ed2279;
+  padding:10px;
+  border-radius: 50%;
+  box-shadow:0px 0px 30px #ed2279;
+  filter:brightness(1.1);
+  animation:animate 2.5s ease-in-out forwards infinite;
+}
+
+@keyframes animate1 {
+  0%{
+    transform:translateY(0px);
+  }  
+  50%{
+    transform:translateY(-15px);
+  }
+  100%{
+    transform:translateY(0px);
+  }
+}
+.about_section{
+  margin-bottom:30px;
+}
+.about_section h1{
+  font-size:50px;
+}
+.about-section h2{
+  margin-top:10px;
+}
+.about-section span{
+  color:#ed2279;
+}
+.about-section p{
+  margin-top: 15px;
+}
+.about_btn{
+  padding: 13px 25px;
+  font-size:20px;
+  background-color:#ed2279;
+  margin-top:25px;
+  border-radius:20px;
+  box-shadow:0px 0px 15px #ed2279;
+  border:none;
+  cursor:pointer;
+  color:#fff;
+}
+
+/* responsive about section */
+
+@media screen and (max-width:820px){
+  .about{
+    display:block;
+    margin-top:-13rem;
+  }
+  .about_section{
+    margin-left:-6rem;
+    width:470px;
+  }
+  .about_section h1{
+    font-size:35px;
+  }
+  .about_photo{
+    width:200px;
+    height:250px;
+    margin:50px -70px;
+  }
+  .about_btn{
+    padding:10px 20px;
+    font-size:18px;
+  }
+}
+
+/* SKILLS SECTION */
+.skills{
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  min-height:100vh;
+  padding:20px;
+
+}
+.wrapper{
+  width:800px;
+  display:flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content:space-between;
+}
+.wrapper .card{
+  width:calc(33% - 20px);
+  background: #fff;
+  height:300px;
+  border-radius: 5px;
+  display: flex;
+  align-items:center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.wrapper .card .circle{
+  position:relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  cursor:default;
+}
+
+.card .circle .box,
+.card .circle .box span{
+  position:absolute;
+  top:50%;
+  left:50%;
+}
+.card .circle .box{
+  height:100%;
+  width: 100%;
+  background:#fff;
+  transform:translate(-50%,-50%) scale(0.8);
+  border-radius:50%;
+  transition:all 0.2s;
+}
+.card .circle:hover .box{
+  transform:translate(-50%,-50%) scale(0.91);
+}
+.card .circle .box span,
+.wrapper .card .text{
+  background:-webkit-linear-gradient(left,#a445b2,#fa4299);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.card .circle .box span{
+  font-size:38px;
+  font-weight:600;
+  font-family: sans-serif;
+  transform:translate(-45%,-50%);
+  transition:all 0.1s;
+}
+.card .circle:hover .box span{
+  transform:translate(-45%,-50%) scale(1.09);
+}
+.card .text{
+  font-size:20px;
+  font-weight:600;
+}
+@media (max-width:505px){
+  .wrapper{
+    width:500px;
+  }
+  .wrapper .card{
+    width:100%;
+    /* margin-bottom: 20px; */
+  }
+}
