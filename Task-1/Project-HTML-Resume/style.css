@@ -1,0 +1,36 @@
+img.five{
+    /* clip-path: circle(); */
+    width:200px;
+    height:200px;
+    border-radius: 50%;
+}
+img.three{
+    width:30px;
+}
+img.four{
+    width:30px;
+}
+img.six{
+    width:30px;
+}
+img.seven{
+    width:30px;
+}
+img.eight{
+    width:20px;
+}
+header{
+    color:black;
+    background-color:#7c6b8d;
+}
+.one{
+    width:35%;
+    background-color:#ada19033
+}
+.two{
+    width:100%;
+    background-color:#f7f4f133;
+}
+table{
+    border-collapse:collapse;
+}
